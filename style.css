@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px ;
+}
+.loading-text{
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+  }
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #ccc;
+    transition: transform 0.3s ease;
+}
+
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 7vw;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3vw;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease;
+}
+
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #333;
+}
+
+button {
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #333;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* Modal styles */
+.modal {
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    display: none;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+}
+.bg-due-passed {
+    background-color: #FF6B6B; /* Red for Due-Passed status */
+}
+
+.bg-completed {
+    background-color: #6BFF6B; /* Green for Completed status */
+}
+
+.bg-canceled {
+    background-color: #9d9d9d; /* Gray for Canceled status */
+}
+
+.bg-in-progress {
+    background-color: #fafa75; /* Blue for In-Progress status */
+}
+
+/* Default background color */
+.bg-default {
+    background-color: #fff; /* Default background color */
+}
+#taskTableBody{
+    text-align: left;
+    font-weight: bolder;
+}
